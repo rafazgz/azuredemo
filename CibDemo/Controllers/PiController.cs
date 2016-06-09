@@ -20,6 +20,7 @@ namespace CibDemo.Controllers
         {
             Invocations++;
             Trace.TraceInformation("Otro cliente al que atender.");
+
             if (id < 10)
             {   var ex = new ArgumentException("Requerida una precisión superior a 10.");
 
@@ -36,6 +37,7 @@ namespace CibDemo.Controllers
 
                 throw ex;
             }
+
             BigNumber x = new BigNumber(id);
             BigNumber y = new BigNumber(id);
             x.ArcTan(16, 5);
